@@ -1,0 +1,50 @@
+.collection {
+    .row {
+        margin: 3em auto;
+        .img {
+            margin: auto;
+            @include small-screen {
+                order: 1;
+            }
+            img {
+                width: 100%;
+            }
+        }
+        .content {
+            margin: auto 0 auto 40px;
+            @include small-screen {
+                order: 2;
+                margin: 3em auto;
+            }
+            h2 {
+                font-size: 54px;
+                line-height: 78px;
+                letter-spacing: 0.05em;
+                margin-bottom: 60px;
+                @include x-small-screen {
+                    font-size: 40px;
+                }
+            }
+            h3 {
+                color: $text-font;
+                font-family: $text-font;
+                font-size: 38px;
+                font-style: italic;
+                font-weight: 400;
+                line-height: 45px;
+                letter-spacing: 0.09em;
+                margin-bottom: 30px;
+                @include x-small-screen {
+                    font-size: 30px;
+                }
+            }
+            p {
+                font-size: 20px;
+                line-height: 30px;
+            }
+            button {
+                margin-top: 50px;
+            }
+        }
+    }
+}

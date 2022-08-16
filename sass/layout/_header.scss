@@ -1,0 +1,64 @@
+.header {
+    display: flex;
+
+    .ring-img {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .big-title {
+        h1 {
+            position: relative;
+            top: -1em;
+            font-size: 85px;
+            font-weight: 600;
+            line-height: 117px;
+            @include medium-screen {
+                font-size: 50px;
+                font-weight: 800;
+            }
+            @include small-screen {
+                font-weight: 700;
+                font-size: 70px;
+            }
+            @include x-small-screen {
+                font-size: 40px;
+                line-height: 70px;
+            }
+        }
+    }
+    .type-ring {
+        display: flex;
+        flex-wrap: wrap;
+        .type {
+            margin: 10px 5px 10px 0;
+            max-width: 157px;
+            h2 {
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 29px;
+            }
+            p {
+                font-size: 12px;
+                line-height: 14px;
+            }
+        }
+    }
+    .story {
+        margin-top: 5em;
+        h2 {
+            font-size: 34px;
+            font-weight: 500;
+            line-height: 49px;
+            margin-bottom: 10px;
+        }
+        p {
+            max-width: 365px;
+            font-size: 14px;
+            font-style: italic;
+            font-weight: 400;
+            line-height: 21px;
+        }
+    }
+}

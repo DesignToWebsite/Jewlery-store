@@ -1,0 +1,78 @@
+.catalog {
+    margin: 5em auto;
+    .row {
+        margin: 5em 0;
+    }
+    .img {
+        margin: auto;
+        img {
+            width: 100%;
+
+        }
+        @include small-screen {
+            order: 1;
+        }
+
+    }
+    .content {
+        @include small-screen {
+            order: 2;
+        }
+        h2 {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 69px;
+            letter-spacing: 0.05em;
+            margin-bottom: 30px;
+            @include medium-screen {
+                font-size: 40px;
+            }
+            @include x-small-screen {
+                font-size: 35px;
+            }
+        }
+        p {
+            font-size: 14px;
+            font-style: italic;
+            line-height: 21px;
+            margin-bottom: 50px;
+        }
+        .size {
+            p {
+                font-size: 26px;
+                font-style: italic;
+                line-height: 31px;
+                letter-spacing: 0.06em;
+                margin: 0 0 10px;
+            }
+            span {
+                cursor: pointer;
+                font-size: 20px;
+                line-height: 23px;
+                margin-right: 50px;
+            }
+        }
+        .buy-btn {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 70px;
+            button {
+                @include small-screen {
+                    margin: 10px 0 10px 0;
+                }
+            }
+            .price {
+                font-family: $h-font;
+                font-size: 36px;
+                font-weight: 900;
+                line-height: 52px;
+                margin: auto;
+                @include small-screen {
+                    margin: 10px 0 10px 0;
+                }
+            }
+        }
+    }
+}

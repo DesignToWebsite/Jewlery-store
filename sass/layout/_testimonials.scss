@@ -1,0 +1,91 @@
+.testimonials {
+    margin: 5em auto;
+    position: relative;
+    .test {
+        display: flex;
+        @include medium-screen {
+            flex-direction: column;
+            align-items: center;
+        }
+        .image {
+            z-index: 1;
+            margin: auto 0;
+            img {
+                @include medium-screen {
+                    width: 100%;
+                }
+            }
+        }
+        .content {
+            margin: auto 0;
+            z-index: -1;
+            position: relative;
+            left: -20px;
+            @include medium-screen {
+                position: inherit;
+            }
+            .title {
+                display: flex;
+                justify-content: space-between;
+                margin: 40px;
+                @include medium-screen {
+                    margin: auto;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                h1 {
+                    font-size: 50px;
+                    line-height: 72px;
+                    @include medium-screen {
+                        font-size: 60px;
+                        margin: 24px auto;
+                    }
+                    @include x-small-screen {
+                        font-size: 10vw;
+                    }
+                }
+                .icons {
+                    img {
+                        margin-left: 15px;
+                        cursor: pointer;
+                        @include medium-screen {
+                            margin: 20px;
+                        }
+                    }
+                }
+            }
+            .testimonial {
+                background-color: #FFFFFF;
+                border-left: #2C2A2B 12px solid;
+                padding: 50px 20px;
+                @include medium-screen {
+                    padding: 50px 10px;
+                    max-width: 90%;
+                }
+                h3 {
+                    font-size: 28px;
+                    line-height: 33px;
+                    margin-bottom: 12px;
+                }
+                span {
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+                p {
+                    font-size: 20px;
+                    line-height: 35px;
+                    margin-top: 26px;
+                }
+            }
+        }
+    }
+    .bg-plus {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -2;
+        @include medium-screen {
+            bottom: -5em;
+        }
+    }
+}

@@ -1,0 +1,70 @@
+nav {
+    //general style
+    margin-top: 1.5em;
+    display: flex;
+    justify-content: space-between;
+
+    //menu list
+    .menu {
+        @include medium-screen {
+            display: none;
+            order: 3;
+            position: absolute;
+            top: 3.5em;
+            width: 100%;
+            background: $nav-bg-sm;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        ul {
+            @include medium-screen {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            li {
+                padding: 0 15px;
+
+                @include medium-screen {
+                    padding: 5px;
+                }
+
+                a {
+                    color: $nav;
+
+                    @include medium-screen {
+                        color: $body;
+                    }
+
+                    &:hover {
+                        font-weight: bolder;
+
+                        @include medium-screen {
+                            border-bottom: 3px $body solid;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //icons
+    .icons {
+        @include medium-screen {
+            order: 2;
+        }
+
+        img {
+            padding: 0 10px;
+            cursor: pointer;
+
+            &.menu-icon {
+                display: none;
+
+                @include medium-screen {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}

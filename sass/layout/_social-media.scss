@@ -1,0 +1,11 @@
+.social-media {
+    position: relative;
+    padding-left: 1em;
+    margin-top: 12em;
+    img {
+        margin-top: 24px;
+    }
+    @include x-small-screen {
+        display: none;
+    }
+}

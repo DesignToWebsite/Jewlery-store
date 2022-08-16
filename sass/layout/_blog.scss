@@ -1,0 +1,37 @@
+.blog {
+    margin: 5em auto;
+    h2 {
+        font-size: 50px;
+        line-height: 72px;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    .blog-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 35px;
+        @include small-screen {
+            grid-template-columns: 1fr;
+        }
+        .col {
+            margin-bottom: 2em;
+            .img {
+                img {
+                    width: 100%;
+                }
+            }
+            .content {
+                h3 {
+                    font-size: 28px;
+                    line-height: 28px;
+                    margin: 30px auto 15px auto;
+                }
+                p {
+                    font-size: 18px;
+                    line-height: 26px;
+                    padding-right: 15px;
+                }
+            }
+        }
+    }
+}
